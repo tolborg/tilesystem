@@ -1,0 +1,228 @@
+@import "normalize";
+@import "mediaqueries";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 980px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: max-width 0.2s;
+
+  @media #{$larger} {
+    max-width: 1220px;
+  }
+}
+
+.tiles__group {
+  float: left;
+}
+.tiles__item-wrapper {
+  float: left;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+.tiles__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+
+
+
+
+[dsb-group-span-default="1/3"] {
+  width: ((100/3)*1) * 1%;
+}
+[dsb-group-span-default="2/3"] {
+  width: ((100/3)*2) * 1%;
+}
+[dsb-group-span-default="3/3"] {
+  width: ((100/3)*3) * 1%;
+}
+[dsb-group-span-default="1/2"] {
+  width: ((100/2)*1) * 1%;
+}
+[dsb-item-span-default="1/1"] {
+  .tiles__item-wrapper {
+    width: ((100/3)*3) * 1%;
+  }
+}
+[dsb-item-span-default="1/2"] {
+  .tiles__item-wrapper {
+    width: ((100/2)*1) * 1%;
+  }
+}
+[dsb-item-span-default="1/3"] {
+  .tiles__item-wrapper {
+    width: ((100/3)*1) * 1%;
+  }
+}
+
+@media #{$smaller} {
+  [dsb-group-span-smaller="1/3"] {
+    width: ((100/3)*1) * 1%;
+  }
+  [dsb-group-span-smaller="2/3"] {
+    width: ((100/3)*2) * 1%;
+  }
+  [dsb-group-span-smaller="3/3"] {
+    width: ((100/3)*3) * 1%;
+  }
+  [dsb-group-span-smaller="1/2"] {
+    width: ((100/2)*1) * 1%;
+  }
+  [dsb-item-span-smaller="1/1"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*3) * 1%;
+    }
+  }
+  [dsb-item-span-smaller="1/2"] {
+    .tiles__item-wrapper {
+      width: ((100/2)*1) * 1%;
+    }
+  }
+  [dsb-item-span-smaller="1/3"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*1) * 1%;
+    }
+  }
+}
+
+@media #{$small} {
+  [dsb-group-span-small="1/3"] {
+    width: ((100/3)*1) * 1%;
+  }
+  [dsb-group-span-small="2/3"] {
+    width: ((100/3)*2) * 1%;
+  }
+  [dsb-group-span-small="3/3"] {
+    width: ((100/3)*3) * 1%;
+  }
+  [dsb-group-span-small="1/2"] {
+    width: ((100/2)*1) * 1%;
+  }
+  [dsb-item-span-small="1/1"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*3) * 1%;
+    }
+  }
+  [dsb-item-span-small="1/2"] {
+    .tiles__item-wrapper {
+      width: ((100/2)*1) * 1%;
+    }
+  }
+  [dsb-item-span-small="1/3"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*1) * 1%;
+    }
+  }
+}
+
+@media #{$medium} {
+  [dsb-group-span-medium="1/3"] {
+    width: ((100/3)*1) * 1%;
+  }
+  [dsb-group-span-medium="2/3"] {
+    width: ((100/3)*2) * 1%;
+  }
+  [dsb-group-span-medium="3/3"] {
+    width: ((100/3)*3) * 1%;
+  }
+  [dsb-group-span-medium="1/2"] {
+    width: ((100/2)*1) * 1%;
+  }
+  [dsb-item-span-medium="1/1"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*3) * 1%;
+    }
+  }
+  [dsb-item-span-medium="1/2"] {
+    .tiles__item-wrapper {
+      width: ((100/2)*1) * 1%;
+    }
+  }
+  [dsb-item-span-medium="1/3"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*1) * 1%;
+    }
+  }
+}
+
+@media #{$large} {
+  [dsb-group-span-large="1/3"] {
+    width: ((100/3)*1) * 1%;
+  }
+  [dsb-group-span-large="2/3"] {
+    width: ((100/3)*2) * 1%;
+  }
+  [dsb-group-span-large="3/3"] {
+    width: ((100/3)*3) * 1%;
+  }
+  [dsb-group-span-large="1/2"] {
+    width: ((100/2)*1) * 1%;
+  }
+  [dsb-item-span-large="1/1"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*3) * 1%;
+    }
+  }
+  [dsb-item-span-large="1/2"] {
+    .tiles__item-wrapper {
+      width: ((100/2)*1) * 1%;
+    }
+  }
+  [dsb-item-span-large="1/3"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*1) * 1%;
+    }
+  }
+}
+
+@media #{$larger} {
+  [dsb-group-span-larger="1/3"] {
+    width: ((100/3)*1) * 1%;
+  }
+  [dsb-group-span-larger="2/3"] {
+    width: ((100/3)*2) * 1%;
+  }
+  [dsb-group-span-larger="3/3"] {
+    width: ((100/3)*3) * 1%;
+  }
+  [dsb-group-span-larger="1/2"] {
+    width: ((100/2)*1) * 1%;
+  }
+  [dsb-item-span-larger="1/1"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*3) * 1%;
+    }
+  }
+  [dsb-item-span-larger="1/2"] {
+    .tiles__item-wrapper {
+      width: ((100/2)*1) * 1%;
+    }
+  }
+  [dsb-item-span-larger="1/3"] {
+    .tiles__item-wrapper {
+      width: ((100/3)*1) * 1%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// =============================================================================
+// Media queries
+// =============================================================================
+
+@function emCalc($pixelBasedNum, $emBase: 16px){
+  @return $pixelBasedNum / $emBase * 1em
+}
+
+$smaller-screen:          emCalc(480px);
+$small-screen:            emCalc(768px);
+$medium-screen:           emCalc(960px);
+$large-screen:            emCalc(1280px);
+$larger-screen:           emCalc(1440px);
+
+$smaller-minus1-screen:   emCalc(479px);
+$small-minus1-screen:     emCalc(767px);
+$medium-minus1-screen:    emCalc(959px);
+$large-minus1-screen:     emCalc(1279px);
+$larger-minus1-screen:    emCalc(1439px);
+
+
+$screen:    "only screen";
+$smaller:   "only screen and (min-width: #{$smaller-screen})";
+$small:     "only screen and (min-width: #{$small-screen})";
+$medium:    "only screen and (min-width: #{$medium-screen})";
+$large:     "only screen and (min-width: #{$large-screen})";
+$larger:    "only screen and (min-width: #{$larger-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait:  "only screen and (orientation: portrait)";
+$retina:    "(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)";

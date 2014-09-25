@@ -1,0 +1,19 @@
+{
+  "name": "rejselol",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp":               "latest",
+    "gulp-util":          "latest",
+    "gulp-plumber":       "latest",
+    "gulp-compass":       "latest",
+    "gulp-ignore":        "latest",
+    "gulp-rimraf":        "latest",
+    "gulp-autoprefixer":  "latest",
+    "gulp-notify":        "latest",
+    "gulp-watch":         "latest",
+    "gulp-rename":        "latest",
+    "gulp-replace":       "latest",
+    "gulp-sass":          "latest",
+    "gulp-connect":       "latest"
+  }
+}
